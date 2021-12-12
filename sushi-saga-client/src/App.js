@@ -25,12 +25,13 @@ class App extends Component {
 
   shuffleSushi = (arr) => {
     const shuffled = arr.sort(() => 0.5 - Math.random());
-    shuffled.splice(0, 3);
+    shuffled.splice(0, 96);
     return shuffled;
   };
 
   render() {
     const fourSushi = this.shuffleSushi(this.state.sushis);
+    console.log(this.state);
     console.log(fourSushi);
     return (
       <div className="app">

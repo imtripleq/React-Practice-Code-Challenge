@@ -9,7 +9,7 @@ const SushiContainer = (props) => {
           return (
             <div key={sushi.id}>
               <h4>{sushi.name}</h4>
-              <img src={sushi.img_url} alt={sushi.name} />
+              <img src={sushi.img_url} alt={sushi.name} width="100%" />
             </div>
           );
         })}
